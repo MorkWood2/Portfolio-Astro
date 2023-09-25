@@ -14,14 +14,8 @@ const { pageTitle } = Astro.props;
     <title>{pageTitle}</title>
   </head>
   <body>
-    <div class='window-border'>
-      <!-- <Header /> -->
-
-      <slot />
-      <!-- <Footer /> -->
-      <!-- <script>
-      import '../scripts/menu.js';
-    </script> -->
+    <div class='window-container'>
+      <div class='window-border'></div>
     </div>
   </body>
 </html>
