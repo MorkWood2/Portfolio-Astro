@@ -1,5 +1,5 @@
 ---
-import Header from '../components/header.astro'
+import Topbar from '../components/Topbar.astro'
 import '../styles/global.css';
 const { pageTitle } = Astro.props;
 ---
@@ -13,9 +13,6 @@ const { pageTitle } = Astro.props;
     <title>{pageTitle}</title>
   </head>
   <body>
-
-  <Header></Header>
-
-
+<Topbar></Topbar>
   </body>
 </html>
