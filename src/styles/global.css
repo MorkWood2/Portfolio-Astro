@@ -82,15 +82,16 @@ html {
   background-color: #f0f0f0;
 }
 
-.window-container {
+/* .window-container {
   width: 100%;
   height: 100%;
   padding: 1.5rem;
-}
+  border: blue 1px solid;
+} */
 
-.window-border {
+/* .window-border {
   border: 1px solid #888888;
   box-sizing: border-box;
   height: 100%;
   padding: 1rem;
-}
+} */
