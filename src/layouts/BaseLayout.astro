@@ -1,5 +1,6 @@
 ---
 import Topbar from '../components/Topbar.astro'
+// import Intro from '../components/Intro.astro'
 import '../styles/global.css';
 const { pageTitle } = Astro.props;
 ---
@@ -13,7 +14,11 @@ const { pageTitle } = Astro.props;
     <title>{pageTitle}</title>
   </head>
   <body>
-<Topbar></Topbar>
-<slot/>
+    <div class="px-32 bg-gray-50 h-full ">
+      <div class="px-20 bg-white pt-12 h-full ">
+        <Topbar></Topbar>
+        <slot/>
+      </div>
+    </div>
   </body>
 </html>
