@@ -14,11 +14,12 @@ const { pageTitle } = Astro.props;
     <title>{pageTitle}</title>
   </head>
   <body>
-    <div class="px-32 bg-gray-50 h-full ">
-      <div class="px-20 bg-white pt-12 h-full ">
+    <div class="bg-gray-50 h-full flex items-center">
+      <div class="px-20 bg-white pt-12 max-w-5xl mx-auto h-full">
         <Topbar></Topbar>
         <slot/>
       </div>
     </div>
+    
   </body>
 </html>
