@@ -15,10 +15,16 @@ const { pageTitle } = Astro.props;
   </head>
   <body>
     <div class="bg-gray-50 h-full flex items-center">
-      <div class="px-4 sm:px-20 bg-white pt-12 max-w-5xl mx-auto h-full ">
+      <div class="px-4 sm:px-20 bg-white pt-12 max-w-5xl mx-auto h-full w-full ">
         <Topbar></Topbar>
         <slot/>
+        <div class="w-full border-t border-zinc-200 mt-14">
+          <div class="pt-4 text-sm text-zinc-500">
+            2023 © Mark Wild
+              </div>
+            </div> 
       </div>
+      
     </div>
     
   </body>
