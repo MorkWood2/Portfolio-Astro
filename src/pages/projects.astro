@@ -5,16 +5,71 @@ const pageTitle = 'Projects';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <div class='grid grid-cols-4 grid-rows-4 gap-10 h-60'>
-    <div class='col-span-2 row-span-4 border border-zinc-300 p-4 rounded-3xl'>
-      <p>Project 1</p>
+  <div class='grid grid-cols-4 grid-rows-4 gap-4 h-60'>
+    <div class='col-span-2 row-span-4 border border-zinc-300 p-6 rounded-3xl'>
+      <div class='flex flex-row'>
+        <div class='flex flex-col gap-20'>
+          <div class='flex flex-col'>
+            <img
+              src='/icons/github-icon.svg'
+              alt='GitHub Icon'
+              class='w-8 h-9 pb-1'
+            />
+            <p>Prompt Share</p>
+            <p class='text-xs text-zinc-500'>Store your favorite AI prompts</p>
+          </div>
+          <div>
+            <a
+              href='https://github.com/MorkWood2/prompt-share'
+              class='text-sm border border-zinc-300 py-1 px-2 rounded-md bg-slate-50 transition duration-300 shadow hover:shadow-md'
+            >
+              Star
+            </a>
+          </div>
+        </div>
+        <div class='flex flex-col'>
+          <img
+            src='/icons/prompt-share.svg'
+            alt='project promptshare icon'
+            class='w-20 h-20 mt-auto ml-28'
+          />
+        </div>
+      </div>
     </div>
 
     <div class='col-span-2 row-span-2 border border-zinc-300 p-4 rounded-3xl'>
-      <p>Project 2</p>
+      <img
+        src='/icons/github-icon.svg'
+        alt='GitHub Icon'
+        class='w-8 h-8 pb-1'
+      />
+      <p>Covid Tracker</p>
+      <div class='flex items-baseline justify-between'>
+        <p class='text-xs text-zinc-500'>Data visualization</p>
+        <a
+          href='https://github.com/MorkWood2/covid-tracker'
+          class='text-sm border border-zinc-300 py-1 px-2 rounded-md bg-slate-50 transition duration-300 shadow hover:shadow-md'
+        >
+          Star
+        </a>
+      </div>
     </div>
     <div class='col-span-2 row-span-2 border border-zinc-300 p-4 rounded-3xl'>
+      <img
+        src='/icons/github-icon.svg'
+        alt='GitHub Icon'
+        class='w-8 h-8 pb-1'
+      />
       <p>Project 3</p>
+      <div class='flex items-baseline justify-between'>
+        <p class='text-xs text-zinc-500'>Placeholder</p>
+        <a
+          href='https://github.com/MorkWood2/prompt-share'
+          class='text-sm border border-zinc-300 py-1 px-2 rounded-md bg-slate-50 transition duration-300 shadow hover:shadow-md'
+        >
+          Star
+        </a>
+      </div>
     </div>
   </div>
 </BaseLayout>
