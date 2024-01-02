@@ -6,9 +6,11 @@ const pageTitle = 'Projects';
 
 <BaseLayout pageTitle={pageTitle}>
   <div class='grid grid-cols-4 grid-rows-4 gap-4 h-60'>
-    <div class='col-span-2 row-span-4 border border-zinc-300 p-6 rounded-3xl'>
+    <div
+      class='col-span-2 row-span-4 border border-zinc-300 p-5 rounded-3xl group hover:animate-icon'
+    >
       <div class='flex flex-row'>
-        <div class='flex flex-col gap-20'>
+        <div class='flex flex-col gap-24'>
           <div class='flex flex-col'>
             <img
               src='/icons/github-icon.svg'
@@ -31,17 +33,17 @@ const pageTitle = 'Projects';
           <img
             src='/icons/prompt-share.svg'
             alt='project promptshare icon'
-            class='w-20 h-20 mt-auto ml-28'
+            class='w-20 h-20 mt-auto ml-28 transition-transform transform group-hover:rotate-45'
           />
         </div>
       </div>
     </div>
 
-    <div class='col-span-2 row-span-2 border border-zinc-300 p-4 rounded-3xl'>
+    <div class='col-span-2 row-span-2 border border-zinc-300 p-3 rounded-2xl'>
       <img
         src='/icons/github-icon.svg'
         alt='GitHub Icon'
-        class='w-8 h-8 pb-1'
+        class='w-8 h-9 pb-1'
       />
       <p>Covid Tracker</p>
       <div class='flex items-baseline justify-between'>
@@ -54,11 +56,11 @@ const pageTitle = 'Projects';
         </a>
       </div>
     </div>
-    <div class='col-span-2 row-span-2 border border-zinc-300 p-4 rounded-3xl'>
+    <div class='col-span-2 row-span-2 border border-zinc-300 p-3 rounded-2xl'>
       <img
         src='/icons/github-icon.svg'
         alt='GitHub Icon'
-        class='w-8 h-8 pb-1'
+        class='w-8 h-9 pb-1'
       />
       <p>Project 3</p>
       <div class='flex items-baseline justify-between'>
