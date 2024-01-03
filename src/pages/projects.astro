@@ -5,35 +5,36 @@ const pageTitle = 'Projects';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <div class='grid grid-cols-4 grid-rows-4 gap-4 h-60'>
+  <div class='grid md:grid-cols-4 md:grid-rows-4 gap-4 h-60'>
     <div
-      class='col-span-2 row-span-4 border border-zinc-300 p-5 rounded-3xl group hover:animate-icon'
+      class='md:col-span-2 md:row-span-4 col-span-4 row-span-2 border border-zinc-300 p-3 rounded-2xl group hover:animate-icon'
     >
-      <div class='flex flex-row'>
-        <div class='flex flex-col gap-24'>
-          <div class='flex flex-col'>
-            <img
-              src='/icons/github-icon.svg'
-              alt='GitHub Icon'
-              class='w-8 h-9 pb-1'
-            />
-            <p>Prompt Share</p>
-            <p class='text-xs text-zinc-500'>Store your favorite AI prompts</p>
-          </div>
-          <div>
+      <div class='flex'>
+        <div class='w-40'>
+          <img
+            src='/icons/github-icon.svg'
+            alt='GitHub Icon'
+            class='w-8 h-9 pb-1'
+          />
+          <p>Prompt Share</p>
+          <div class='flex items-baseline justify-between flex-col md:gap-24'>
+            <p class='text-xs text-zinc-500 pb-3 md:pb-0'>
+              AI prompt repository
+            </p>
             <a
-              href='https://github.com/MorkWood2/prompt-share'
-              class='text-sm border border-zinc-300 py-1 px-2 rounded-md bg-slate-50 transition duration-300 shadow hover:shadow-md'
+              href='https://github.com/MorkWood2/covid-tracker'
+              class='text-sm border border-zinc-300 py-1 px-2 md:mt-3 rounded-md bg-slate-50 transition duration-300 shadow hover:shadow-md'
             >
               Star
             </a>
           </div>
         </div>
-        <div class='flex flex-col'>
+
+        <div class='mx-auto my-auto'>
           <img
             src='/icons/prompt-share-icon.svg'
             alt='project promptshare icon'
-            class='w-20 h-20 mt-auto ml-28 transition-transform transform group-hover:rotate-45'
+            class='md:w-32 md:h-32 w-20 h-20 transition-transform transform group-hover:rotate-45'
           />
         </div>
       </div>
