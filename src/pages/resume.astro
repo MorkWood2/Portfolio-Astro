@@ -13,7 +13,7 @@ const pageTitle = 'About';
 
   <p class='font-semibold text-lg py-10'>Experience</p>
 
-  <div class='grid grid-cols-2 grid-rows-1 gap-4'>
+  <div class='grid md:grid-cols-2 md:grid-rows-1 grid-cols-1 grid-rows-1 gap-4'>
     <div class='col-span-1 row-span-1 border border-zinc-300 p-4 rounded-2xl'>
       <div class='flex items-center gap-4'>
         <img
@@ -38,7 +38,9 @@ const pageTitle = 'About';
         </li>
       </ul>
     </div>
-    <div class='col-span-1 row-span-1 border border-zinc-300 p-4 rounded-2xl'>
+    <div
+      class='col-span-1 md:row-span-1 row-span-2 border border-zinc-300 p-4 rounded-2xl'
+    >
       <div class='flex items-center gap-4'>
         <img
           src='/icons/east-bay-react-symbol.png'
@@ -64,99 +66,122 @@ const pageTitle = 'About';
   </div>
   <p class='font-semibold text-lg pt-10 pb-5'>Projects</p>
 
-  <ul class='list-disc pl-10 pt-2'>
+  <ul class='list-disc md:pl-10 pl-2 pt-2'>
     <li>
-      <div class='flex items-center'>
-        <span class='text-zinc-500'>2020</span>
-        <span class='ml-2 mr-2'>—</span>
-        <a href='https://markwild.dev/'>Old Portfolio</a>
+      <div class='flex items-center text-zinc-500'>
+        <p>
+          2020
+          <span class='md:mx-2 mx-1'>—</span>
+          <a href='https://markwild.dev/' class='text-black'>Old Portfolio</a>
+        </p>
       </div>
     </li>
+
     <li>
-      <div class='flex items-center'>
-        <span class='text-zinc-500'>2020</span>
-        <span class='ml-2 mr-2'>—</span>
-        <a href='https://github.com/MorkWood2/olem'>Water Design Page</a>
-        <p class='text-zinc-500'>
-          <span class='ml-1 mr-1'>:</span> Fictitious website built mostly in
+      <div class='flex items-center text-zinc-500'>
+        <p>
+          2020
+          <span class='md:mx-2 mx-1'>—</span>
+          <a href='https://github.com/MorkWood2/olem' class='text-black'
+            >Water Design Page</a
+          >
+          <span class='md:mx-1 mx-0'>:</span> Fictitious website built mostly in
           css
         </p>
       </div>
     </li>
+
     <li>
-      <div class='flex items-center'>
-        <span class='text-zinc-500'>2020</span>
-        <span class='ml-2 mr-2'>—</span>
-        <a href='https://github.com/MorkWood2/olem'>Olem Inc.</a>
-        <p class='text-zinc-500'>
-          <span class='ml-1 mr-1'>:</span> Apparel site using React, Redux, &
+      <div class='flex items-center text-zinc-500'>
+        <p>
+          2020
+          <span class='md:mx-2 mx-1'>—</span>
+          <a href='https://github.com/MorkWood2/olem' class='text-black'
+            >Olem Inc.</a
+          >
+          <span class='md:mx-1 mx-0'>:</span> Apparel site using React, Redux, &
           Firebase
         </p>
       </div>
     </li>
     <li>
-      <div class='flex items-center'>
-        <span class='text-zinc-500'>2020</span>
-        <span class='ml-2 mr-2'>—</span>
-        <a href='https://github.com/MorkWood2/east-bay-react'>East Bay React</a>
-        <p class='text-zinc-500'>
-          <span class='ml-1 mr-1'>:</span> A weekly online East Bay React Meetup
-          group
+      <div class='flex items-center text-zinc-500'>
+        <p>
+          2020
+          <span class='md:mx-2 mx-1'>—</span>
+
+          <a
+            href='https://github.com/MorkWood2/east-bay-react'
+            class='text-black'>East Bay React</a
+          >
+          <span class='md:mx-1 mx-0'>:</span> A weekly online East Bay React
+          Meetup group
         </p>
       </div>
     </li>
     <li>
-      <div class='flex items-center'>
-        <span class='text-zinc-500'>2020</span>
-        <span class='ml-2 mr-2'>—</span>
-        <a href='https://github.com/MorkWood2/save-team'>Save Team!</a>
-        <p class='text-zinc-500'>
-          <span class='ml-1 mr-1'>:</span> React site that raises awareness
+      <div class='flex items-center text-zinc-500'>
+        <p>
+          2020
+          <span class='md:mx-2 mx-1'>—</span>
+          <a href='https://github.com/MorkWood2/save-team' class='text-black'
+            >Save Team!</a
+          >
+          <span class='md:mx-1 mx-0'>:</span> React site that raises awareness
           about a program I benefited from in High School
         </p>
       </div>
     </li>
     <li>
-      <div class='flex items-center'>
-        <span class='text-zinc-500'>2019</span>
-        <span class='ml-2 mr-2'>—</span>
-        <a href='https://github.com/MorkWood2/neo-art'>Art_Project_2</a>
-        <p class='text-zinc-500'>
-          <span class='ml-1 mr-1'>:</span> Public art project
+      <div class='flex items-center text-zinc-500'>
+        <p>
+          2019
+          <span class='md:mx-2 mx-1'>—</span>
+          <a href='https://github.com/MorkWood2/neo-art' class='text-black'
+            >Art_Project_2</a
+          >
+          <span class='md:mx-1 mx-0'>:</span> Public art project
         </p>
       </div>
     </li>
     <li>
-      <div class='flex items-center'>
-        <span class='text-zinc-500'>2019</span>
-        <span class='ml-2 mr-2'>—</span>
-        <a href='https://github.com/MorkWood2/React-github-search'
-          >Github User Search</a
-        >
-        <p class='text-zinc-500'>
-          <span class='ml-1 mr-1'>:</span> React Github user search app
+      <div class='flex items-center text-zinc-500'>
+        <p>
+          2019
+          <span class='md:mx-2 mx-1'>—</span>
+          <a
+            href='https://github.com/MorkWood2/React-github-search'
+            class='text-black'>Github User Search</a
+          >
+          <span class='md:mx-1 mx-0'>:</span> React Github user search app
         </p>
       </div>
     </li>
     <li>
-      <div class='flex items-center'>
-        <span class='text-zinc-500'>2019</span>
-        <span class='ml-2 mr-2'>—</span>
-        <a href='https://github.com/MorkWood2/people-finder'>People Finder</a>
-        <p class='text-zinc-500'>
-          <span class='ml-1 mr-1'>:</span> Full stack MERN React app using react
-          hooks, context, JWT authentication
+      <div class='flex items-center text-zinc-500'>
+        <p>
+          2019
+          <span class='md:mx-2 mx-1'>—</span>
+          <a
+            href='https://github.com/MorkWood2/people-finder'
+            class='text-black'>People Finder</a
+          >
+          <span class='md:mx-1 mx-0'>:</span> Full stack MERN React app using
+          react hooks, context, JWT authentication
         </p>
       </div>
     </li>
     <li>
-      <div class='flex items-center'>
-        <span class='text-zinc-500'>2018</span>
-        <span class='ml-2 mr-2'>—</span>
-        <a href='https://morkwood2.github.io/Public_Art_Map/'>Public Art Map</a>
-        <p class='text-zinc-500'>
-          <span class='ml-1 mr-1'>:</span> An interactive map of public art in
-          the Bay Area
+      <div class='flex items-center text-zinc-500'>
+        <p>
+          2018
+          <span class='md:mx-2 mx-1'>—</span>
+          <a
+            href='https://morkwood2.github.io/Public_Art_Map/'
+            class='text-black'>Public Art Map</a
+          >
+          <span class='md:mx-1 mx-0'>:</span> An interactive map of public art
+          in the Bay Area
         </p>
       </div>
     </li>
