@@ -81,3 +81,12 @@ html {
   width: 100%;
   /* background-color: #f0f0f0; */
 }
+@font-face {
+  font-family: 'Roboto';
+  src: url('/assets/fonts/LibreBaskerville-Bold.ttf') format('truetype');
+  font-weight: 400 700; /* Specify weights */
+  font-style: normal;
+}
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
