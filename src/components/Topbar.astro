@@ -1,23 +1,30 @@
 ---
-
+const currentPath = Astro.url.pathname;
 ---
 
-<div class='flex justify-between pb-20'>
-  <a href='/' class='font-bold text-2xl'> Mark Wild</a>
-
-  <div
-    class='flex sm:gap-6 gap-4 rounded-full overflow-hidden border border-solid border-gray-200 shadow-sm hover:shadow-md transition-shadow'
-  >
-    <!-- <a href="/about/" class=" text-sm	flex-grow h-9 flex items-center justify-center pl-6 text-slate-500">About</a> -->
+<div class='flex justify-between items-center pb-14 w-full'>
+  <div class='flex sm:gap-6 gap-4 text-slate-800'>
     <a
-      href='/projects/'
-      class='text-sm flex-grow h-9 flex items-center justify-center text-slate-500 pl-6'
-      >Projects</a
+      href='/'
+      class={`text-2xl flex items-center justify-center ${
+        currentPath === '/' ? ' text-blue-500 font-bold' : ''
+      }`}
     >
+      About
+    </a>
     <a
       href='/resume/'
-      class='text-sm flex-grow h-9 flex items-center justify-center pr-6 text-slate-500'
-      >Resume</a
+      class={`text-2xl flex items-center justify-center ${
+        currentPath === '/resume/' ? 'text-blue-500 font-bold' : ''
+      }`}
     >
+      Resume
+    </a>
   </div>
+
+  <img
+    src='/images/faceshot.png'
+    alt='Face shot'
+    class='w-20 h-20 rounded-full'
+  />
 </div>
