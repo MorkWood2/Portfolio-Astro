@@ -1,22 +1,27 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
+import Work from '../components/Work.astro';
+
 const pageTitle = 'Mark Wild Portfolio';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <div class='text-slate-800'>
     <p class='text-5xl bold pb-10 font-roboto'>Mark Wild</p>
-    <div class='text-2xl'>
+    <div class='text-2xl pb-10'>
       <p class='pb-10'>
-        Hey! I'm Mark, and I’ve spent 5 years in the Aerospace industry, helping
+        Hey! I'm Mark, and I’ve spent 4 years in the aerospace industry, helping
+
 
         <a
           href='https://astra.com/'
           target='_blank'
           rel='noopener noreferrer'
           class='text-blue-500 hover:underline'
-          >launch rockets and manufacture satellite engines.
+          >launch rockets and manufacture satellite engines<span
+            class='text-slate-800'>.</span
+          >
         </a> I have over a decade of service industry experience, as well as a
         background in software engineering, and I currently specialize in IT
         infrastructure. I like to solve technical problems by bridging talent,
@@ -26,8 +31,8 @@ const pageTitle = 'Mark Wild Portfolio';
           target='_blank'
           rel='noopener noreferrer'
           class='text-blue-500 hover:underline'
-          >third spaces
-        </a>, literature, and the environment.
+          >third spaces<span class='text-slate-800'>,</span>
+        </a> literature, and the environment.
       </p>
       <p>
         You can also find me on
@@ -46,5 +51,7 @@ const pageTitle = 'Mark Wild Portfolio';
         >.
       </p>
     </div>
+
+    <Work />
   </div>
 </BaseLayout>
