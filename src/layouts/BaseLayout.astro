@@ -2,6 +2,7 @@
 import Topbar from '../components/Topbar.astro';
 import '../styles/global.css';
 const { pageTitle } = Astro.props;
+const year = new Date().getFullYear();
 ---
 
 <html lang='en'>
@@ -20,7 +21,7 @@ const { pageTitle } = Astro.props;
         <Topbar />
         <slot />
         <div class='w-full border-t border-zinc-200 mt-14'>
-          <div class='pt-4 text-sm text-zinc-500'>2024 © Mark Wild</div>
+          <div class='pt-4 text-sm text-zinc-500'>{year} © Mark Wild</div>
         </div>
       </div>
     </div>
