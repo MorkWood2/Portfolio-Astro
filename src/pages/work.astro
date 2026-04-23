@@ -1,0 +1,195 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "About";
+
+const B = "\u2022"; // bullet character
+
+const agilityRoles = [
+  {
+    title: "Information Technology Specialist",
+    dates: "2026 – Present",
+    datetime: "2026",
+    location: "Fremont, CA",
+    description: `${B} Operations, Infrastructure, and Robotics...`,
+  },
+];
+
+const astraRoles = [
+  {
+    title: "Information Technology Engineer",
+    dates: "2024 – 2026",
+    datetime: "2024",
+    location: "Alameda, CA",
+    description: `${B} Lead IT Engineer responsible for end-to-end management of network infrastructure across two facilities, including LAN, VPN, DNS, firewalls, switches, and end-user systems.
+
+${B} Sysadmin and technical support expert for 20+ production services that make up our infrastructure.
+
+${B} Azure & Intune Expert: Skilled in deploying, managing, and securing enterprise Windows environments using Microsoft Intune, Azure AD, and Autopilot for seamless device lifecycle and policy management.
+
+${B} Partner with machine shop, inventory, production, engineering, and test departments to synchronize IT efforts and facilitate on-time project completion.
+
+${B} PLM Admin; apply patches, maintain NX/Teamcenter environments. Resolve configuration issues on clients.`,
+  },
+  {
+    title: "Software Engineer",
+    dates: "2022 – 2024",
+    datetime: "2022",
+    description: `${B} Automated manufacturing work orders for inventory and production, saving over 20 hours per week in manual data entry and processes.
+
+${B} Contributed many frontend interactive features to our premier data visualization platform.
+
+${B} Built Astra TV, a full-stack edge computing platform that streamed rocket launches to internal employees in real time. Led the preliminary design review and authored the design document that secured sign-off from DevOps, network, and backend leads.
+
+${B} Collaborated closely with UI/UX on developing user stories, offering engineering feedback on design decisions and reviewing API contracts with backend engineers.`,
+  },
+  {
+    title: "Inventory Control Specialist",
+    dates: "2020 – 2022",
+    datetime: "2020",
+    description: `${B} Extensive expertise in the complete manufacturing part lifecycle, including Bill of Materials (BOMs) and ERP/MRP systems.
+
+${B} In-depth experience in space hardware testing, covering the complete lifecycle from acceptance to qualification and flight certification.
+
+${B} Work closely with Supply Chain, QC, Machine shop, and production leaders to ensure parts are distributed within the time constraints of the build schedule.`,
+  },
+];
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <div>
+    <h1 class="text-5xl font-bold pb-10 font-roboto">Work</h1>
+
+    {/* Agility */}
+    <section class="pb-20">
+      <h2 class="sr-only">Agility</h2>
+      <img
+        src="/images/agility-logo.png"
+        alt="Agility"
+        class="h-[85px] pt-10 w-auto"
+      />
+      <p class="text-2xl pt-2">
+        Humanoid robots for logistics and manufacturing
+      </p>
+
+      <div class="py-8 flex flex-col items-center">
+        <img
+          src="/images/digit.png"
+          alt="Digit, the humanoid robot built by Agility Robotics"
+          class="rounded-lg h-[70vh] w-auto object-contain"
+        />
+        <p class="text-sm text-slate-800 italic pt-3">
+          Unlike rockets, which have been launching since the '60s, this is
+          bleeding-edge technology
+        </p>
+      </div>
+
+      <div class="pt-16">
+        <h3 class="text-2xl font-roboto pb-8">Experience</h3>
+
+        <ol class="relative ml-3 space-y-10">
+          {
+            agilityRoles.map(
+              ({ title, dates, datetime, location, description }, i) => (
+                <li class="ml-8 relative">
+                  {i !== agilityRoles.length - 1 && (
+                    <span
+                      class="absolute -left-[33px] top-4 bottom-[-40px] w-0.5 bg-gray-300"
+                      aria-hidden="true"
+                    />
+                  )}
+                  <span
+                    class="absolute -left-[40px] top-2 w-4 h-4 rounded-full bg-white border-2 border-gray-500"
+                    aria-hidden="true"
+                  />
+                  <h4 class="text-xl font-semibold font-roboto">{title}</h4>
+                  {dates && (
+                    <time
+                      datetime={datetime}
+                      class="block text-sm text-gray-500 mt-1"
+                    >
+                      {dates}
+                    </time>
+                  )}
+                  {location && <p class="text-sm text-gray-500">{location}</p>}
+                  <p class="mt-3 text-lg leading-relaxed whitespace-pre-line">
+                    {description}
+                  </p>
+                </li>
+              ),
+            )
+          }
+        </ol>
+      </div>
+    </section>
+
+    {/* Astra */}
+    <section>
+      <h2 class="sr-only">Astra</h2>
+      <img
+        src="/images/astra-logo.png"
+        alt="Astra"
+        class="h-[90px] pt-10 w-auto"
+      />
+      <p class="text-2xl pt-2">
+        Launch vehicle manufacturing and orbital services
+      </p>
+
+      <div class="py-8 flex flex-col items-center">
+        <img
+          src="/images/lv0008.jpg"
+          alt="Astra rocket on the pad at dusk"
+          class="rounded-lg h-[50vh] w-2/3 object-cover"
+        />
+        <p class="text-sm text-slate-800 italic pt-3">
+          I mean, undeniably cool.... right?
+        </p>
+      </div>
+
+      <p class="text-xl pt-5">
+        At Astra, I built human-centered software to support aerospace
+        manufacturing and developed tools for engineers to analyze flight and
+        test vehicle performance. My foundation in manufacturing stems from my
+        time in inventory, where I interacted with nearly every part of the
+        vehicle throughout its development lifecycle.
+      </p>
+
+      <div class="pt-16">
+        <h3 class="text-2xl font-roboto pb-8">Experience</h3>
+
+        <ol class="relative ml-3 space-y-10">
+          {
+            astraRoles.map(
+              ({ title, dates, datetime, location, description }, i) => (
+                <li class="ml-8 relative">
+                  {i !== astraRoles.length - 1 && (
+                    <span
+                      class="absolute -left-[33px] top-4 bottom-[-40px] w-0.5 bg-gray-300"
+                      aria-hidden="true"
+                    />
+                  )}
+                  <span
+                    class="absolute -left-[40px] top-2 w-4 h-4 rounded-full bg-white border-2 border-gray-500"
+                    aria-hidden="true"
+                  />
+                  <h4 class="text-xl font-semibold font-roboto">{title}</h4>
+                  {dates && (
+                    <time
+                      datetime={datetime}
+                      class="block text-sm text-gray-500 mt-1"
+                    >
+                      {dates}
+                    </time>
+                  )}
+                  {location && <p class="text-sm text-gray-500">{location}</p>}
+                  <p class="mt-3 text-lg leading-relaxed whitespace-pre-line">
+                    {description}
+                  </p>
+                </li>
+              ),
+            )
+          }
+        </ol>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

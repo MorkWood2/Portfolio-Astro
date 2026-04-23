@@ -2,29 +2,29 @@
 const currentPath = Astro.url.pathname;
 ---
 
-<div class='flex justify-between items-center pb-14 w-full'>
-  <div class='flex sm:gap-6 gap-4 text-slate-800'>
-    <!-- <a
-      href='/'
-      class={`text-2xl flex items-center justify-center ${
-        currentPath === '/' ? ' text-blue-500 font-bold' : ''
+<div class="flex justify-between items-center pb-14 w-full">
+  <div class="flex sm:gap-6 gap-4 text-slate-800">
+    <a
+      href="/"
+      class={`text-xl flex items-center justify-center ${
+        currentPath === "/" ? " text-blue-500 font-bold" : ""
       }`}
     >
-      About
+      Home
     </a>
     <a
-      href='/resume/'
-      class={`text-2xl flex items-center justify-center ${
-        currentPath === '/resume/' ? 'text-blue-500 font-bold' : ''
+      href="/work/"
+      class={`text-xl flex items-center justify-center ${
+        currentPath === "/work/" ? "text-blue-500 font-bold" : ""
       }`}
     >
-      Resume
-    </a> -->
+      Work
+    </a>
   </div>
 
   <img
-    src='/images/faceshot.png'
-    alt='Face shot'
-    class='w-20 h-20 rounded-full'
+    src="/images/profile.png"
+    alt="Face shot"
+    class="w-20 h-20 rounded-full"
   />
 </div>
