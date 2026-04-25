@@ -1,0 +1,68 @@
+<svg version="1.1" id="svg2" xmlns:x="ns_extend;" xmlns:i="ns_ai;" xmlns:graph="ns_graphs;" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 363.3 86" style="enable-background:new 0 0 363.3 86;" xml:space="preserve">
+ <style type="text/css">
+  .st0{fill:#323232;}
+	.st1{fill:#BCBCBD;}
+ </style>
+ <metadata id="metadata8">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>
+     image/svg+xml
+    </dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage">
+    </dc:type>
+   </cc:Work>
+  </rdf:RDF>
+  <sfw xmlns="ns_sfw;">
+   <slices>
+   </slices>
+   <sliceSourceBounds bottomLeftOrigin="true" height="86" width="363.3" x="640.3" y="223.3">
+   </sliceSourceBounds>
+  </sfw>
+ </metadata>
+ <g id="g10" transform="matrix(1.3333333,0,0,-1.3333333,0,576)">
+  <g id="g14" transform="translate(384.644,225.3521)">
+   <path id="path16" class="st0" d="M-268.7,166.7l-5.4,10.6l-5.4-10.6H-268.7z M-266.2,161.9H-282l-2.8-5.5h-6.4l13.9,26.1h6.5
+			l13.9-26.1h-6.5L-266.2,161.9z">
+   </path>
+  </g>
+  <g id="g18">
+   <g>
+    <g id="g20">
+     <g id="g26" transform="translate(492.4941,219.5571)">
+      <path id="path28" class="st0" d="M-330.7,170.1c0-5.2-4.9-8.7-14.1-8.7c-6.6,0-12,1.9-16,5.3l3.4,4.1c3.2-2.9,7.4-4.3,12.7-4.3
+						c5.3,0,8,1,8,3.2s-2.7,2.8-8.7,3.3c-7.5,0.6-14.4,2.3-14.4,7.9c0,5.5,5.8,8.4,13.9,8.4c5.7,0,10.6-1.4,14-4l-3.3-4.1
+						c-2.9,2.2-6.4,3.1-10.7,3.1c-3.5,0-7.9-0.6-7.9-3c0-2.2,3.7-2.5,8.9-2.9C-336.5,177.6-330.7,175.8-330.7,170.1">
+      </path>
+     </g>
+     <g id="g30" transform="translate(571.9785,250.2915)">
+      <path id="path32" class="st0" d="M-376.3,152.4h-11.4v-21h-6v21h-11.3v5.2h28.7V152.4z">
+      </path>
+     </g>
+     <g id="g34" transform="translate(632.0566,233.4316)">
+      <path id="path36" class="st0" d="M-410.9,162.1c3.1,0,5.5,0.7,5.5,3.7s-2.3,3.7-5.5,3.7h-11.8v-7.3H-410.9z M-405.7,148.3
+						l-7.5,8.9h-9.4v-8.9h-5.9v26.1h18c6.4,0,11.2-2.9,11.2-8.6c0-4.4-2.9-7.2-7.3-8.2l8.1-9.3H-405.7z">
+      </path>
+     </g>
+     <g id="g38" transform="translate(725.0645,225.3521)">
+      <path id="path40" class="st0" d="M-464.3,166.7l-5.4,10.6l-5.4-10.6H-464.3z M-461.8,161.9h-15.8l-2.8-5.5h-6.4l13.9,26.1h6.5
+						l13.9-26.1h-6.5L-461.8,161.9z">
+      </path>
+     </g>
+     <g id="g42" transform="translate(193.9644,317.3892)">
+      <path id="path44" class="st1" d="M-159.1,113.8l7.2-22.2c0.1-0.5,0.6-0.8,1.1-0.8h23.4c1.1,0,1.5-1.4,0.7-2l-18.9-13.7
+						c-0.4-0.3-0.6-0.8-0.4-1.2l7.2-22.2c0.3-1-0.8-1.9-1.7-1.2l-18.9,13.7c-0.4,0.3-0.9,0.3-1.3,0l-18.9-13.7
+						c-0.9-0.6-2,0.2-1.7,1.2l7.2,22.2c0.1,0.5,0,1-0.4,1.2l-18.9,13.7c-0.9,0.6-0.4,2,0.7,2h23.4c0.5,0,0.9,0.3,1.1,0.8l7.2,22.2
+						C-160.8,114.9-159.4,114.9-159.1,113.8">
+      </path>
+     </g>
+     <g id="g46" transform="translate(241.5483,170.9414)">
+      <path id="path48" class="st0" d="M-186.4,198c0.3-1-0.8-1.9-1.7-1.2l-18.9,13.7c-0.4,0.3-0.9,0.3-1.3,0l-18.9-13.7
+						c-0.9-0.6-2,0.2-1.7,1.2l20.2,62.3c0.3,1,1.8,1,2.1,0L-186.4,198z">
+      </path>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
