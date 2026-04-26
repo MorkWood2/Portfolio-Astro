@@ -26,7 +26,7 @@ const currentPath = Astro.url.pathname;
       type="button"
       title="Toggle theme"
       aria-label="Toggle theme"
-      class="theme-toggle text-slate-800 dark:text-slate-200 dark:text-slate-200 text-2xl p-1 hover:opacity-70 transition-opacity"
+      class="theme-toggle text-orange-400 dark:text-yellow-200 text-2xl p-1 hover:opacity-70 transition-opacity"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ const currentPath = Astro.url.pathname;
       </svg>
     </button>
     <img
-      src="/images/profile.png"
+      src="/images/profile.jpeg"
       alt="Face shot"
       class="w-20 h-20 rounded-full"
     />
@@ -64,10 +64,18 @@ const currentPath = Astro.url.pathname;
 <script>
   const toggle = document.getElementById("theme-toggle");
 
-  // Set initial toggle state to match current theme on page load
   if (document.documentElement.classList.contains("dark")) {
     toggle?.classList.add("theme-toggle--toggled");
   }
+
+  // Mark ready — button becomes visible now that state is correct
+  document.documentElement.classList.add("theme-toggle-ready");
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      toggle?.classList.add("theme-toggle--allow-transition");
+    });
+  });
 
   toggle?.addEventListener("click", () => {
     const isDark = document.documentElement.classList.toggle("dark");
