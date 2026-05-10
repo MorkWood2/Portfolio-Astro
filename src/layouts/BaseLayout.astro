@@ -23,7 +23,7 @@ const year = new Date().getFullYear();
     </script>
 
     <script
-      defer
+      async
       src="https://cloud.umami.is/script.js"
       data-website-id="48e9b33c-7230-4738-9960-322c861997ed"></script>
     <title>{pageTitle}</title>
@@ -36,8 +36,15 @@ const year = new Date().getFullYear();
         <Topbar />
         <slot />
         <div class="w-full border-t border-zinc-200 dark:border-zinc-800 mt-14">
-          <div class="pt-4 text-sm text-zinc-500 dark:text-zinc-400">
-            {year} © Mark Wild
+          <div
+            class="pt-4 text-sm text-zinc-500 dark:text-zinc-400 flex justify-between items-center"
+          >
+            <span>{year} • Mark Wild</span>
+            <a
+              href="mailto:mark@mwild.co"
+              class="text-blue-500 dark:text-blue-400 hover:underline"
+              >mark@mwild.co</a
+            >
           </div>
         </div>
       </div>

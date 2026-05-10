@@ -18,6 +18,12 @@ const currentPath = Astro.url.pathname;
     >
       Work
     </a>
+    <a
+      href="/tech/"
+      class={`text-xl flex items-center justify-center ${currentPath === "/tech/" ? "text-blue-500 dark:text-blue-400 font-bold" : ""}`}
+    >
+      Tech
+    </a>
   </div>
 
   <div class="flex items-center gap-4">

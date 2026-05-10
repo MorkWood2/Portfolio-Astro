@@ -1,0 +1,132 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle = "Tech";
+const categories = [
+    {
+        name: "Information Technology",
+        groups: [
+            {
+                label: "Network",
+                items: [
+                    "LAN",
+                    "VPN",
+                    "DNS",
+                    "DHCP",
+                    "Firewalls",
+                    "Switches",
+                    "Tailscale",
+                    "Cloudflare",
+                ],
+            },
+            {
+                label: "Cloud & Infrastructure",
+                items: ["AWS", "Azure", "Google Cloud", "Proxmox", "Docker"],
+            },
+            {
+                label: "Endpoint & Identity",
+                items: [
+                    "Microsoft Intune",
+                    "Autopilot",
+                    "NinjaOne",
+                    "Jamf",
+                    "CrowdStrike",
+                    "Active Directory",
+                ],
+            },
+            {
+                label: "Platforms",
+                items: [
+                    "Microsoft 365",
+                    "Google Workspace",
+                    "Jira",
+                    "Confluence",
+                    "NX",
+                    "Teamcenter",
+                ],
+            },
+            {
+                label: "OS",
+                items: ["Linux", "Windows", "macOS"],
+            },
+        ],
+    },
+    {
+        name: "Software Engineering",
+        items: [
+            "JavaScript",
+            "CSS",
+            "HTML",
+            "React",
+            "Angular",
+            "Git",
+            "REST APIs",
+            "SQL",
+            "Python",
+            "Bash",
+        ],
+    },
+    {
+        name: "Manufacturing",
+        description:
+            "A snapshot of my domain knowledge across the full manufacturing lifecycle.",
+        items: [
+            "ERP/MRP",
+            "Bill of Materials",
+            "Inventory Control",
+            "Work Instructions",
+            "Hardware Testing",
+            "PLM",
+            "Machine Shop Operations",
+            "Failure modes and fault trees",
+            "Flight Certification",
+            "Aerospace hardware",
+            "Robotics",
+        ],
+    },
+];
+---
+
+<BaseLayout pageTitle={pageTitle}>
+    <div class="text-slate-800 dark:text-slate-200">
+        {
+            categories.map((category) => (
+                <section class="mb-10">
+                    <h2 class="text-xl font-bold mb-2 text-slate-800 dark:text-slate-200">
+                        {category.name}
+                    </h2>
+                    {"description" in category && (
+                        <p class="text-sm text-blue-500 dark:text-blue-400 mb-6 max-w-prose">
+                            {category.description}
+                        </p>
+                    )}
+                    {"groups" in category ? (
+                        <div class="flex flex-col gap-6">
+                            {category.groups.map((group) => (
+                                <div>
+                                    <p class="text-xs uppercase tracking-widest mb-2 text-blue-500 dark:text-blue-400">
+                                        {group.label}
+                                    </p>
+                                    <ul class="flex flex-wrap gap-2">
+                                        {group.items.map((item) => (
+                                            <li class="px-3 py-1 rounded-full text-sm bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">
+                                                {item}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
+                        </div>
+                    ) : (
+                        <ul class="flex flex-wrap gap-2">
+                            {category.items.map((item) => (
+                                <li class="px-3 py-1 rounded-full text-sm bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">
+                                    {item}
+                                </li>
+                            ))}
+                        </ul>
+                    )}
+                </section>
+            ))
+        }
+    </div>
+</BaseLayout>
